@@ -1,5 +1,6 @@
 section {
-  max-width: 600px;
+  width: 600px;
+  min-height: 600px;
   float: left;
 }
 article figure {
@@ -7,9 +8,14 @@ article figure {
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
-  background-color: #efefef9e;
   padding: 20px;
   box-shadow: 5px 5px 12px #ccc;
+}
+.figure-gray {
+  background-color: #efefef9e;
+}
+.figure-blue {
+  background-color: #31a8a942;
 }
 article figure figcaption {
   padding: 15px;
@@ -33,6 +39,12 @@ article figure figcaption img {
 aside {
   width: 600px;
   float: left;
+  text-align: center;
+}
+aside div:nth-of-type(1) {
+  padding-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
 }
 aside h1 {
   text-transform: capitalize;
@@ -40,10 +52,22 @@ aside h1 {
   font-size: 38px;
   text-align: center;
   color: #10a5af;
+  margin: 15px;
 }
 .hovered {
   border: dotted 5px #10a5af;
 }
 .box-favorites {
-  height: 600px;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f7f7f7;
+}
+.welcome-drag-and-drop {
+  font-family: 'Satisfy', cursive;
+    font-size: 40px;
+    color: #ccc;
+    margin: auto;
+    border: 3px dotted;
+    padding: 20px;
 }
